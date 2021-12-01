@@ -10,9 +10,8 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<About />} />
-          <Route path="user" element={<UserInfo />}>
-            <Route path="edit" element={<EditUser />} />
-          </Route>
+          <Route path="user/edit" element={<EditUser />} />
+          <Route path="user" element={<UserInfo />} />
         </Route>
       </Routes>
     </BrowserRouter>
