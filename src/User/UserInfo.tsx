@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { SubscriptionPlans } from './subscription-plans'
 import { User } from './user'
 
@@ -9,11 +10,12 @@ const user: User = {
 }
 
 function UserInfo() {
-  return (
+  return (<>
+  <Link to='/'>Home</Link>
     <div>
       Here should be the user component
     </div>
-  )
+  </>)
 }
 
 export default UserInfo
